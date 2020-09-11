@@ -1,8 +1,10 @@
 import React from "react";
+import {Form} from 'react-bootstrap';
+import "../index.css";
 const CreateNewPost = props => {
   return (
     <>
-      <form onSubmit={props.savePost}>
+      <Form onSubmit={props.savePost}>
         <h1>Create New Post</h1>
         <input
           type="text"
@@ -24,8 +26,8 @@ const CreateNewPost = props => {
         ></textarea>
         <br />
         <br />
-        <button>Save Post</button>
-      </form>
+        <button className="savePost">Save Post</button>
+      </Form>
     </>
   );
 };

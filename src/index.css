@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box
+}
+
+h1,h2 ,h3{
+    text-align: center;
+}
+
+.creat{
+    display: grid;
+    margin: auto;
+    /* justify-content: center; */
+}
+
+input{
+    display: grid;
+    margin-top: 20px;
+    margin: auto;
+}
+
+textarea, p{
+    display: grid;
+    margin: auto;
+}
+
+.savePost, .post{
+    display: grid;
+    margin: auto;
+}

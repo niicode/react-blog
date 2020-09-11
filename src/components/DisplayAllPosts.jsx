@@ -1,7 +1,9 @@
 import React, { useState, useRef } from "react";
 import CreateNewPost from "./CreateNewPost";
 import Post from "./Post";
-import ModifyPost from "./ModifyPost"
+import "../index.css";
+import ModifyPost from "./ModifyPost";
+import {Jumbotron, Button} from 'react-bootstrap';
 const DisplayAllPosts = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
@@ -95,7 +97,8 @@ const DisplayAllPosts = () => {
   }
   return (
     <>
-      <h2>All Posts</h2>
+      <Jumbotron>
+           <h2 >All Posts</h2>
       {!allPosts.length ? (
         <div>
           <h3>There is nothing to see here!</h3>
@@ -116,7 +119,8 @@ const DisplayAllPosts = () => {
       )}
       <br />
       <br />
-      <button onClick={toggleCreateNewPost}>Create New</button>
+      <Button className="creat" onClick={toggleCreateNewPost}>Create New</Button>
+      </Jumbotron>
     </>
   );
 };

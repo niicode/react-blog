@@ -1,8 +1,10 @@
 import React from "react";
+import {Button, Form} from 'react-bootstrap';
+import "../index.css";
 const ModifyPost = props => {
   return (
     <>
-      <form>
+      <Form>
         <h1>Modify Post</h1>
         <input
           defaultValue={props.title}
@@ -22,8 +24,8 @@ const ModifyPost = props => {
         ></textarea>
         <br />
         <br />
-        <button onClick ={props.updatePost}>Update Post</button>
-      </form>
+        <Button onClick ={props.updatePost}>Update Post</Button>
+      </Form>
     </>
   );
 };
